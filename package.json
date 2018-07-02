@@ -1,0 +1,49 @@
+{
+  "name": "react-city-selector",
+  "version": "1.0.6",
+  "main": "lib/index.js",
+  "description": "a react city selector for Chinese Provinces",
+  "scripts": {
+    "clean": "rd /s lib && mkdir lib",
+    "publish": "npm run compile && npm publish",
+    "compile": "npm run clean && babel src -d lib",
+    "dist": "cross-env NODE_ENV=production webpack --config ./webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supermap-gaoziyang/React-CitySelector_China.git"
+  },
+  "keywords": [
+    "react",
+    "city",
+    "selector"
+  ],
+  "author": "gaozy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supermap-gaoziyang/React-CitySelector_China/issues"
+  },
+  "homepage": "https://github.com/supermap-gaoziyang/React-CitySelector_China#readme",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "open-browser-webpack-plugin": "0.0.5",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

@@ -1,0 +1,77 @@
+/*plugin citySelector*/
+
+.dataviz-cityselector {
+    width: 488px;
+    margin: 3px auto 0 auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.dataviz-cityselector ul {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    line-height: 29px;
+    overflow: hidden;
+}
+
+.dataviz-cityselector ul li {
+    float: left;
+    list-style: none;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    display: inline;
+    color: #0083CB;
+}
+
+.dataviz-cityselector ul li.on {
+    border-bottom-color: #0083cb;
+    position: relative;
+}
+
+.city {
+    border-top: 1px solid #DDD;
+    margin-top: -1px;
+    clear: left;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.py-key {
+    font-weight: bold;
+    font-size: 12px;
+    color: #0083CB;
+}
+
+.city-content,
+.py-key {
+    display: inline-block;
+    vertical-align: top;
+}
+.py-key {
+    padding-left: 7px;
+    padding-top: 9px;
+}
+.city-content {
+    width: 450px;
+    margin-left: 14px;
+}
+.HOT > .city-content {
+    width: 439px;
+}
+.city-content>span {
+    display: inline-block;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin: 8px 24px 8px 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.city-content>span:hover {
+    color: #0083CB;
+}
+
