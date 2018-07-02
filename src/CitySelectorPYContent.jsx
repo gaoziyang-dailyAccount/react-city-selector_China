@@ -12,7 +12,7 @@ class CitySelectorPYContent extends Component {
         let citys = []
         this.props.pyValues.forEach(function (v, i) {
             citys.push(
-                <span key={i} className='city-name'>{v}</span>
+                <span onClick={(e)=>{this.onCityChange(e)}} key={i} className='city-name'>{v}</span>
             )
         }, this);
         return citys;
