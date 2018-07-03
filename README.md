@@ -26,4 +26,5 @@ Name | Type | Default | Description
 --- | --- | --- | --- |
 `onTabsChange` | Function | | cities’ first letter tabs change handler
 `onCityChange` | Function | | selected city change handler. Receive selected name as arg
-
+## example image
+<img src="http://chuantu.biz/t6/338/1530608529x-1376440150.png" width="400" height="300"/>
