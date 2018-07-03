@@ -16,7 +16,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import CitySelector from "react-city-selector";
 
-ReactDom.render(
+ReactDOM.render(
     <CitySelector onTabsChange={onTabsChange} onCityChange={onCityChange}/>,  document.getElementById("root")
 )
 ```
