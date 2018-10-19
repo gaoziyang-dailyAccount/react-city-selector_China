@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/supermap-gaoziyang/React-CitySelector_China.git"
+    "url": "git+https://github.com/gaoziyang-dailyAccount/react-city-selector_China.git"
   },
   "keywords": [
     "react",
@@ -23,9 +23,9 @@
   "author": "gaozy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/supermap-gaoziyang/React-CitySelector_China/issues"
+    "url": "https://github.com/gaoziyang-dailyAccount/react-city-selector_China/issues"
   },
-  "homepage": "https://github.com/supermap-gaoziyang/React-CitySelector_China#readme",
+  "homepage": "https://github.com/gaoziyang-dailyAccount/react-city-selector_China#readme",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
