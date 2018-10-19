@@ -10,7 +10,8 @@ class CitySelector extends Component {
         super(props);
         this.state = {
             tabIndex: 0
-        }
+        };
+        this.onTabsChange = this.onTabsChange.bind(this);
     }
     shouldComponentUpdate(nextProps, nextState) {
         return !Util.shallowEqual(nextProps, this.props) ||
@@ -20,18 +21,22 @@ class CitySelector extends Component {
         let tabsTitle = [];
         config.TABS.forEach(function (tabName, tabIndex) {
             tabsTitle.push(
-                <li onClick={() => { this.onTabsChange(tabIndex) }}
+                <li 
                     key={tabIndex + tabName}
+                    data-index={tabIndex}
                     className={this.state.tabIndex === tabIndex ? 'on' : ''}>
                     {tabName}
                 </li>);
         }, this);
         return tabsTitle
     }
-    onTabsChange(i) {
-        if (this.state.tabIndex !== i) {
+    onTabsChange(event) {
+        let tabIndex = event.target.dataset.index;
+        tabIndex = tabIndex && parseInt(tabIndex);
+       // let index = event.target && event
+        if (tabIndex && this.state.tabIndex !== tabIndex) {
             this.setState({
-                tabIndex: i
+                tabIndex
             });
             this.props.onTabsChange && this.props.onTabsChange(i, config.TABS[this.state.tabIndex]);
         }
@@ -47,7 +52,7 @@ class CitySelector extends Component {
     render() {
         return (
             <div className='dataviz-cityselector'>
-                <ul>
+                <ul onClick={this.onTabsChange}>
                     {this.getCitysTabs()}
                 </ul>
                 <div className='city'>
