@@ -34,11 +34,11 @@ class CitySelector extends Component {
         let tabIndex = event.target.dataset.index;
         tabIndex = tabIndex && parseInt(tabIndex);
        // let index = event.target && event
-        if (tabIndex && this.state.tabIndex !== tabIndex) {
+        if ((tabIndex || tabIndex === 0)&& this.state.tabIndex !== tabIndex) {
             this.setState({
                 tabIndex
             });
-            this.props.onTabsChange && this.props.onTabsChange(i, config.TABS[this.state.tabIndex]);
+            this.props.onTabsChange && this.props.onTabsChange(tabIndex, config.TABS[this.state.tabIndex]);
         }
     }
     getCitysList() {
